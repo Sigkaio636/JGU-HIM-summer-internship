@@ -1,0 +1,6 @@
+hpc:
+  host: remise
+  user: gonzalee
+  remote_base: /home/users/kphth/gonzalee/OptimVcVso
+sweep:
+  x0: [-80,10]
