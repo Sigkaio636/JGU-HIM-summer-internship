@@ -1,0 +1,8 @@
+Li7WS_sTok_pp
+4.0015061791 3.0149322473 2 1        			* A1,A2,Z1,Z2 (Masses, charges)
+1 0 1 1 0 1 1 3 1                     	*lam,i1,i2,if,li,ji,lf,jf,n0
+100 20000				*rmax, Nr
+WS
+62.74 0 2.39 0.68 75.031 0 2.39 0.68 2.35	*V_0i,Vsoi,ri,ai,V_0f,Vsof,rf,af,rC
+500 0.01 0.01		      		* Ne, E0, hE
+10 	 				*lec: 0 only wf, 10, cross sections

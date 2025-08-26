@@ -1,0 +1,11 @@
+197.32705359 1.43996518 20.736	* csts: hc,e2,hm
+10.0 1.0 4 0 0 1	* Masses, charges, spins: Ac,Af (in amu),Zc,Zf,iSc,iSf
+2 2			* c-f potential: ntypo,Njpo
+-39.74 2.585 0.6 21.000 2.585 0.6 2.585        *j,l,Vp,rp,ap,VLS,rls,als,rC
+-62.52 2.585 0.6 21.000 2.585 0.6 2.585        *j,l,Vp,rp,ap,VLS,rls,als,rC
+1			* nb of bound states
+1 5 2		* bound states: NR,J,l
+20000 100 1e-6		* radial mesh:Nru,rmu,eps
+500 1.27 0.0001		* Energies: NE,E0,hE
+100     			* lec 0:E, 10:wf 1st state, 100:phaseshift, 110 bin
+Be11testBS

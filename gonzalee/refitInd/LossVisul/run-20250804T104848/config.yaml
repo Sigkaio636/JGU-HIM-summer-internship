@@ -1,0 +1,7 @@
+hpc:
+  host: remise
+  user: gonzalee
+  remote_base: /home/users/kphth/gonzalee/refitInd/LossVisul
+sweep:
+  Vc: [-75, 0.01, -74] # parametros de malla fina
+  # E0, hE, Ef

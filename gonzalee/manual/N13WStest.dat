@@ -1,0 +1,8 @@
+N13WStest
+12 1 6 1        			* A1,A2,Z1,Z2 (Masses, charges)
+1 0 1 1 0 1 1 1 0                     	*lam,i1,i2,if,li,ji,lf,jf,n0
+100 20000				*rmax, Nr
+WS
+0 0 2.85 0.6 39.88 0 2.85 0.6 2.85	*V_0f,Vsof,rf,af,V_0i,Vsoi,ri,ai,rC
+100 0.01 0.01		      		* Ne, E0, hE
+0 	 				*lec: 0 only wf, 10, cross sections
