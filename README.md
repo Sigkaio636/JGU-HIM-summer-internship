@@ -5,7 +5,7 @@ It consists of the literature found, the codes created for fitting the models, t
 
 ## Literature and Datasets 📂
 ### ./Datasets 📑
-Contains the collected papers on experiments involving empirical measurements of 7Li cross sections. (see [Pending tasks and future extensions](#pending-tasks))
+Contains the collected papers on experiments involving empirical measurements of 7Li cross sections. (see [Pending tasks](##-pending-tasks-and-future-extensions))
 Also, contains th papers of ANC and Phase-shift used data. 
 
 > Cross section data extracted from https://www-nds.iaea.org/exfor can be found in [Racam_sca Jupyter notebook](Sfactor/Racam_sca.ipynb) in **Manual S factor extraction** section.
