@@ -9,5 +9,6 @@ Contains the collected papers on experiments involving empirical measurements of
 Also, contains th papers of ANC and Phase-shift used data. 
 
 > Cross section data extracted from [https://www-nds.iaea.org/exfor](exfor)
+> (exfor)[https://www-nds.iaea.org/exfor]
 
 ## Pending tasks and future extensions
