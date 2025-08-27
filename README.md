@@ -21,7 +21,16 @@ These are simply the functions for reading Boscos.f output files in .dep and .df
 ### 📝🧮 ./Sfactor 📝🧮
 These are Jupyter notebooks containing the data analysis of the Boscos.f and Racam5.f outputs, for the final refits of the models and the S-factor contribution calculations.
 #### ./Sfactor/Racam_sca.ipynb
-The initial calculations of S-factor, first time using the Racam5.f code. The results are used for the [13/08/2025 meeting](<Meeting presentations/13-08 meet.pptx>)
+The initial calculations of S-factor, first time using the Racam5.f code. The results are used for the [13/08/2025 meeting](<Meeting presentations/13-08 meet.pptx>).
+The results are not are not definite, because later was performed a refit for central potential depth of p-waves. 
+#### ./Sfactor/Complete-Sfactor.ipynb
+This is the more extensive and last analysis. It starts again from the beginning by evaluating the correspondence of Tokimoto's potentials, applying what it was learned earlier when attempting to adjust the binding energy. It focuses solely on fitting with  empirical radius and masses. 
+
+Furthermore, as both Fortran codes are used, it has been necessary to ensure that both give the same results. (see [Complete HPC directory](##-complete-hpc-directory))
+
+The results are the final ones presented in the last presentation [25/08/2025 meeting](<Meeting presentations/Corrected 25-08 final meet.pptx>). 
+
+## Complete HPC directory
 
 
 ## Pending tasks and future extensions
