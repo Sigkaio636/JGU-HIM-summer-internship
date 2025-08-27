@@ -21,7 +21,7 @@ These are simply the functions for reading Boscos.f output files in .dep and .df
 ### 📝🧮 ./Sfactor 📝🧮
 These are Jupyter notebooks containing the data analysis of the Boscos.f and Racam5.f outputs, for the final refits of the models and the S-factor contribution calculations.
 #### ./Sfactor/Racam_sca.ipynb
-The initial calculations of S-factor, first time using the Racam5.f code. The results are used for the [13/08/2025 meeting](meeting-presentations/13-08-meet.pptx)
+The initial calculations of S-factor, first time using the Racam5.f code. The results are used for the [13/08/2025 meeting](meeting-presentations/13%2008%20meet.pptx)
 
 
 ## Pending tasks and future extensions
