@@ -64,6 +64,13 @@ It contains the executables which perform the refit of central potential Vc and 
 
 
 ## Complete HPC directory
+### 💻🗃️ ./gonzalee 💻🗃️
+This folder contains the content that was in my *kphth* user account. ***It is especially interesting for the .dat input files***.
+#### ▶ ./gonzalee/manual
+The scripts and input files from the Boscos.f and Racam5.f manual examples. Used initially to familiarize oneself with the Fortran codes.
+#### ▶ ./gonzalee/BindE
+Exploration of Boscos.f script changing the radius and mass unit to reproduce the binding energy for both states. Results presented in [13/08/2025 meeting](<Meeting presentations/13-08 meet.pptx>). Here, the conventions were defined as a pair of coulomb radius and mass unit. 
+#### ▶ ./gonzalee/refitInd
 
 
 ## Pending tasks and future extensions
@@ -75,3 +82,5 @@ It contains the executables which perform the refit of central potential Vc and 
 > No se pudieron extraer los errores para Sfactor data Griffiths
 
 > Exfor no estaba los datos de Sfactor para el paper de Burzynski, solo  angular differential cross section.
+
+> Optimización de gradinet descend en caso de utilizarse
