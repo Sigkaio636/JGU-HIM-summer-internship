@@ -3,7 +3,7 @@ This is the collection of the work carried out during the stay at Helmholtz-Inst
 
 It consists of the literature found, the performed data analysis, the codes created for fitting the models, the files from JGU Data Center, and the presentations from the meetings.
 
-## Literature and Datasets
+## 1. Literature and Datasets
 ### 📊📄 ./Datasets 📊📄
 Contains the collected papers on experiments involving empirical measurements of 7Li cross sections. (see [Pending tasks and future extensions](##-pending-tasks-and-future-extensions))
 Also, contains the papers of ANC and Phase-shift used data. 
@@ -13,7 +13,7 @@ Also, contains the papers of ANC and Phase-shift used data.
 ### 📑 ./Support papers 📑
 It consists of papers related to the research topic that were found in the initial literature search. (see [Pending tasks and future extensions](##-pending-tasks-and-future-extensions))
 
-## Analysis of results with Jupiter notebooks
+## 2. Analysis of results with Jupiter notebooks
 
 ### 📈 ./Graphic outfile 📈
 These are simply the functions for reading Boscos.f output files in .dep and .dfo format.
@@ -30,7 +30,7 @@ Furthermore, as both Fortran codes are used, it has been necessary to ensure tha
 
 The results are the final ones presented in the last presentation [25/08/2025 meeting](<Meeting presentations/Corrected 25-08 final meet.pptx>). 
 
-## Refitting models and optimization problems
+## 3. Refitting models and optimization problems
 
 ### ⚙️ ./Refit dev ⚙️
 These are the codes for visualising the relationship between potential depth and binding energy for bound states (p3/2 and p1/2), and solving the optimisation problems of finding the optimal depth to reproduce this observable. **These codes are NOT USED to construct the final potential models.**
@@ -63,7 +63,7 @@ It contains the executables which perform the refit of central potential Vc and 
 ##### PhaseRefit_Dep.ipynb : Plots the phase-shifts and wavefunction for refited potential models. It uses the data from /resultant dep_dfo/.
 
 
-## Complete HPC directory
+## 4. Complete HPC directory
 ### 💻🗃️ ./gonzalee 💻🗃️
 This folder contains the content that was in my *kphth* user account. ***It is especially interesting for the .dat input files***.
 #### ▶ ./gonzalee/manual
