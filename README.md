@@ -42,7 +42,7 @@ These are the codes for visualising the relationship between potential depth and
 **LossField2D**: Generates the tuples (Vc, Vso, Eb) of the corresponding binding energy for each pair of central potential depth Vc and spin-orbit strenght Vso given a state (p3/2 or p1/2) and convention. These last parameters are fixed in the input file. Calculations are performed in (TODO Check refit_ind LossVisulSurf )
 
 These two folder have a very similar execution line:
-##### + config.yaml : It is where the HPC access is stated (⚠️ This should be changed to your own configuration) and the parameters for sampling from the linear fine mesh.
+**+ config.yaml** : It is where the HPC access is stated (⚠️ This should be changed to your own configuration) and the parameters for sampling from the linear fine mesh.
 ##### + create_inpfile.py : Each input file (e.g. 042_input.dat) for Bocos.f is created. State and conventions is specified here by changing the template.
 ##### + create_outcsv.py : Read all previously generated outfiles (e.g. 033_output.txt), extract the binding energy for each of them and collects them into a final CSV file (e.g. res_run-20250803T192222.csv).
 ##### + local_runner.py : This is the main code, where execution is initialised. You must execute only this script in your own machine. It is recommended to read the comments to understand the inner workings.
