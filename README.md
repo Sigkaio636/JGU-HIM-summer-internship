@@ -113,7 +113,7 @@ This is the directory where the execution of gradient descent is performed.
 #### ▶ ./gonzalee/radiContri
 Various tests to check for consistency between Boscos and Racam code outputs. The Fortran scripts had to be modified to change the value of the constants and then recompiled.
 + Boscos : Original Boscos.f code
-+ BoscosE : Boscos.f modified to show more decimals in binding energy.
++ BoscosE : Boscos.f modified to show more decimals in binding energy and ANC.
 + Racam5 : Original Racam5.f code
 + Racam5eps : Racam5.f modified to have the same energy diferential as in Boscos.f of eps=1e-6, originally eps=1e-3 .
 
@@ -125,7 +125,7 @@ If file name starts with *WS*, it is for Racam5eps.out. Any questions regarding 
 
 ## 5. Pending tasks and future extensions
 
-> Falta pdf de Griffiths
++ I couldn't get Griffiths's paper. Johannes Gutenberg University do not have permission to access it, but other german universities do have them. (See)[https://cdnsciencepub.com/doi/10.1139/p61-167]
 
 > Particularmente interesantes los papers de "apuntado"
 
