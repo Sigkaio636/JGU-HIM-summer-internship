@@ -127,7 +127,7 @@ If file name starts with *WS*, it is for Racam5eps.out. Any questions regarding 
 
 + I couldn't get Griffiths's paper. Johannes Gutenberg University do not have permission to access it, but other german universities do have them. See https://cdnsciencepub.com/doi/10.1139/p61-167
 
-+ From (Support papers)[<Support papers>]
++ From (Support papers)[<support_papers>]
 
 > No se pudieron extraer los errores para Sfactor data Griffiths
 > (Los errores de Ivanovich, como en Dubovichenko no aparecen asumimos que no se pueden recuperar)
