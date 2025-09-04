@@ -45,15 +45,15 @@ These are the codes for visualising the relationship between potential depth and
 
 These two folder have a very similar execution line:
 
-**+ config.yaml** : It is where the HPC access is stated (⚠️ This should be changed to your own configuration) and the parameters for sampling from the linear fine mesh.
+  **+ config.yaml** : It is where the HPC access is stated (⚠️ This should be changed to your own configuration) and the parameters for sampling from the linear fine mesh.
 
-**+ create_inpfile.py** : Each input file (e.g. 042_input.dat) for Bocos.f is created. State and conventions is specified here by changing the template.
+  **+ create_inpfile.py** : Each input file (e.g. 042_input.dat) for Bocos.f is created. State and conventions is specified here by changing the template.
 
-**+ create_outcsv.py** : Reads all previously generated outfiles (e.g. 033_output.txt), extracts the binding energy for each of them and collects them into a final CSV file (e.g. res_run-20250803T192222.csv).
+  **+ create_outcsv.py** : Reads all previously generated outfiles (e.g. 033_output.txt), extracts the binding energy for each of them and collects them into a final CSV file (e.g. res_run-20250803T192222.csv).
 
-**+ local_runner.py** : This is the main code, where execution is initialised. **You must execute only this script in your own machine**. It is recommended to read the comments to understand the inner workings.
+  **+ local_runner.py** : This is the main code, where execution is initialised. **You must execute only this script in your own machine**. It is recommended to read the comments to understand the inner workings.
 
-**+ graph_results.py** : The previously generated CSV file is read and plotted:
+  **+ graph_results.py** : The previously generated CSV file is read and plotted:
 
 * /LossField1D/graph_results.py : It allows to find the optimal *Vc* simply by zooming in on the figure, provided a sufficient resolution in the fine mesh.
 * /LossField2D/graph_results.py : It uses the pre-calculated CSV files in the folder to visualise the surfaces (*Vc*, *Vso*, *EbGround*) (*Vc*, *Vso*, *EbExcited*) and construct the loss function for the gradient descent of ./VcVso_opt
@@ -61,19 +61,19 @@ These two folder have a very similar execution line:
 #### ▶ ./Refit dev/VcVso_opt
 It contains the executables which perform the refit of central potential *Vc* and spin-orbital strength *Vso* to reproduce simultaneously binding energy for both ground and excited states. The optimization method consists in a gradient descent with an adecuate choice of constant learning rate. Visually explained in [13/08/2025 meeting](<Meeting presentations/13-08 meet.pptx>). 
 
-**+ config.yaml** : It is where the HPC access is stated (⚠️ This should be changed to your own configuration) and the initial point for gradient descent.
+  **+ config.yaml** : It is where the HPC access is stated (⚠️ This should be changed to your own configuration) and the initial point for gradient descent.
 
-**+ exploration csv/** : Contains several execution logs for different values of learning rate.
+  **+ exploration csv/** : Contains several execution logs for different values of learning rate.
 
-**+ graph_results.ipynb** : Analysis studying the properties of gradient descent. Used to find the optimal learning rate. It uses the data from /exploration csv/.
+  **+ graph_results.ipynb** : Analysis studying the properties of gradient descent. Used to find the optimal learning rate. It uses the data from /exploration csv/.
 
-**+ local_runner.py** : This is the main code, where execution is initialised. **You must execute only this script in your own machine.**
+  **+ local_runner.py** : This is the main code, where execution is initialised. **You must execute only this script in your own machine.**
 
-**+ remote_runner.py** : File that is copied to the remote machine and manages execution on that machine. It contains the functions for input creation, execution with Boscos.f, output reading, csv writing, and the entire implementation of the gradient descent.
+  **+ remote_runner.py** : File that is copied to the remote machine and manages execution on that machine. It contains the functions for input creation, execution with Boscos.f, output reading, csv writing, and the entire implementation of the gradient descent.
 
-**+ resultant dep_dfo/** : Contains the output dep and dfo files from Boscos, for each convention with the optimum potential parameters.
+  **+ resultant dep_dfo/** : Contains the output dep and dfo files from Boscos, for each convention with the optimum potential parameters.
 
-**+ PhaseRefit_Dep.ipynb** : Plots the phase-shifts and wavefunction for refited potential models. It uses the data from /resultant dep_dfo/.
+  **+ PhaseRefit_Dep.ipynb** : Plots the phase-shifts and wavefunction for refited potential models. It uses the data from /resultant dep_dfo/.
 
 (see [Pending tasks and future extensions](##-pending-tasks-and-future-extensions))
 
@@ -87,21 +87,21 @@ Exploration of Boscos.f script changing the radius and mass unit to reproduce th
 #### ▶ ./gonzalee/refitInd
 Contains the directories where the calculations to visualize the relation between model parameters (*Vc*, *Vso*) and binding energy (*EbGround*, *EbExcited*) are performed.
 
-**/LossVisul** : Calculates the tuples (*Vc*, *Eb*) for fitting models with just central potential. 
+  **/LossVisul** : Calculates the tuples (*Vc*, *Eb*) for fitting models with just central potential. 
 
-**/LossVisulSurf** : Calculates the tuples (*Vc*, *Vso*, *Eb*) to construct the loss function of the gradient descent.
+  **/LossVisulSurf** : Calculates the tuples (*Vc*, *Vso*, *Eb*) to construct the loss function of the gradient descent.
 
-**/mesh_res** : Contains the input and output files for the fitted central potential models for each convention.
+  **/mesh_res** : Contains the input and output files for the fitted central potential models for each convention.
 
 The name of the file indicates the state (*G* for ground = p3/2 and *E* for excited = p1/2) and later references the convention. 
 
-🔴 *eki* : My suggestion for convention, since it reproduced the binding energy of 8B in [30/07/2025 meeting](<Meeting presentations/30-07 meet.pptx>). **Estimated** Coloumb radius 2.33951 fm and **empirical** masses.
+  🔴 *eki* : My suggestion for convention, since it reproduced the binding energy of 8B in [30/07/2025 meeting](<Meeting presentations/30-07 meet.pptx>). **Estimated** Coloumb radius 2.33951 fm and **empirical** masses.
 
-🟡 *ekX* : An extension of my suggested convention. Instead of using the estimated radius, it uses the empirically measured radius of 7Li (from Dubovichenko 2009). **Empirical** Coloumb radius 2.35 fm and **empirical** masses.  
+  🟡 *ekX* : An extension of my suggested convention. Instead of using the estimated radius, it uses the empirically measured radius of 7Li (from Dubovichenko 2009). **Empirical** Coloumb radius 2.35 fm and **empirical** masses.  
 
-🔵 *pieRM* : Convention suggested by Pierre. It uses integer multiples of the average between proton and neutron masses and for the Coloumb radius the same as for Woods-Saxon geometry in Tokimoto's paper. **Woods-Saxon** Coloumb radius 2.39 fm and **integer** masses.
+  🔵 *pieRM* : Convention suggested by Pierre. It uses integer multiples of the average between proton and neutron masses and for the Coloumb radius the same as for Woods-Saxon geometry in Tokimoto's paper. **Woods-Saxon** Coloumb radius 2.39 fm and **integer** masses.
 
-🟢 *pieM* : Modification of Pierre's convention. It uses the empirical radius of 7Li instead of Woods-Saxon's. **Empirical** Coloumb radius 2.35 fm and **integer** masses.
+  🟢 *pieM* : Modification of Pierre's convention. It uses the empirical radius of 7Li instead of Woods-Saxon's. **Empirical** Coloumb radius 2.35 fm and **integer** masses.
 
 In [13/08/2025 meeting](<Meeting presentations/13-08 meet.pptx>) there is a summary table. 
 
