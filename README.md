@@ -127,13 +127,16 @@ If file name starts with *WS*, it is for Racam5eps.out. Any questions regarding 
 
 + I couldn't get Griffiths's paper. Johannes Gutenberg University do not have permission to access it, but other german universities do have them. See https://cdnsciencepub.com/doi/10.1139/p61-167
 
-+ From [Support papers](<Support papers>)
++ From [Support papers](<Support papers>) they are expecially interesting the following papers. First three correspond to the same team and explain that the breakup of 6Li and 7Li is significantly mediated by a transfer reaction which create different channels. Last one is the most modern paper founded about the topic, also considers differents channels. It might be interesting to compare their results with the hypotheses used in the data analysis in the various empirical measurements articles.
+  + [Insights into mechanisms and time-scales of breakup of 6,7Li; 2011](<Support papers/Insights into mechanisms.pdf>)
+  + [Asymptotic and near-target direct breakup of 6Li and 7Li; 2016](<Support papers/Asymptotic near-target.pdf>)
+  + [Challenges in describing nuclear reaction outcomes at near-barrier energies; 2017](<Support papers/Challenges describing outcomes.pdf>)
+  + [Triton-alpha radiactive capture reaction at astrophysical energies; 2023](<Support papers/Faddeev eq.pdf>)
 
-> No se pudieron extraer los errores para Sfactor data Griffiths
-> (Los errores de Ivanovich, como en Dubovichenko no aparecen asumimos que no se pueden recuperar)
++ Sfactor errors could not be extracted for Griffiths' data. See [Racam_sca.ipynb](Sfactor/Racam_sca.ipynb)
+  > Nor the errors of Ivanovich phase shift measurements. But as in Dubovichenko paper Fig 1 don't appear errorbars, we assume that they can't be recovered.
 
-> Exfor no estaba los datos de Sfactor para el paper de Burzynski, solo angular differential cross section.
++ In [Exfor](https://www-nds.iaea.org/exfor), they aren't the Sfactor data of Burzynski paper, just the angular differential cross section.
 
-> Optimización de gradinet descent en caso de utilizarse
-
-> Podria elegirse en mejor learning rate, pero entras en compromiso de menos steps pero menos estabilidad.
++ If you wish to use the gradient descend code, it would be beneficial to make some simple optimizations. In particular, instead of generating all the input files for each iteration, to save space, overwrite a file. The generation of all was useful for debugging and ensuring that the code worked properly, but now it is no longer necessary.
+  > A better learning rate could also be sought, perhaps by making it dynamic.
