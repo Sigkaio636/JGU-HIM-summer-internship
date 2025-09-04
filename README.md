@@ -125,9 +125,9 @@ If file name starts with *WS*, it is for Racam5eps.out. Any questions regarding 
 
 ## 5. Pending tasks and future extensions
 
-+ I couldn't get Griffiths's paper. Johannes Gutenberg University do not have permission to access it, but other german universities do have them. (See)[https://cdnsciencepub.com/doi/10.1139/p61-167]
++ I couldn't get Griffiths's paper. Johannes Gutenberg University do not have permission to access it, but other german universities do have them. See https://cdnsciencepub.com/doi/10.1139/p61-167
 
-> Particularmente interesantes los papers de "apuntado"
++ From (Support papers)[<Support papers>]
 
 > No se pudieron extraer los errores para Sfactor data Griffiths
 > (Los errores de Ivanovich, como en Dubovichenko no aparecen asumimos que no se pueden recuperar)
