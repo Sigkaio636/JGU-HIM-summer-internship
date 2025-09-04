@@ -92,7 +92,9 @@ Contains the directories where the calculations to visualize the relation betwee
 **/LossVisulSurf** : Calculates the tuples (*Vc*, *Vso*, *Eb*) to construct the loss function of the gradient descent.
 
 **/mesh_res** : Contains the input and output files for the fitted central potential models for each convention.
+
 The name of the file indicates the state (*G* for ground = p3/2 and *E* for excited = p1/2) and later references the convention. 
+
 🔴 *eki* : My suggestion for convention, since it reproduced the binding energy of 8B in [30/07/2025 meeting](<Meeting presentations/30-07 meet.pptx>). **Estimated** Coloumb radius 2.33951 fm and **empirical** masses.
 
 🟡 *ekX* : An extension of my suggested convention. Instead of using the estimated radius, it uses the empirically measured radius of 7Li (from Dubovichenko 2009). **Empirical** Coloumb radius 2.35 fm and **empirical** masses.  
@@ -103,13 +105,25 @@ The name of the file indicates the state (*G* for ground = p3/2 and *E* for exci
 
 In [13/08/2025 meeting](<Meeting presentations/13-08 meet.pptx>) there is a summary table. 
 
-
 #### ▶ ./gonzalee/OptimVcVso
-Gradient descent
-#### ▶ ./gonzalee/radiContri
-Coherencia Boscos.f and Racam5.f 
+This is the directory where the execution of gradient descent is performed. 
 
-## Pending tasks and future extensions
+**/phsh_wf** : Contains the input and output files for the fitted central and spin-orbit potential models for each convention. Same file names as in ./gonzalee/refitInd/mesh_res are used.
+
+#### ▶ ./gonzalee/radiContri
+Various tests to check for consistency between Boscos and Racam code outputs. The Fortran scripts had to be modified to change the value of the constants and then recompiled.
++ Boscos : Original Boscos.f code
++ BoscosE : Boscos.f modified to show more decimals in binding energy.
++ Racam5 : Original Racam5.f code
++ Racam5eps : Racam5.f modified to have the same energy diferential as in Boscos.f of eps=1e-6, originally eps=1e-3 .
+
+Important to use empirical masses as hm = hbar^2/(2*mu) in Racam is calculated in function of other constants.
+
+#### ▶ ./gonzalee/CheckTokphsh
+All input and output files used in [Complete-Sfactor.ipynb](Sfactor/Complete-Sfactor.ipynb). As the convention is unique here, empirical Coloumb radius and empirical masses, different file names correspond to different partial waves (e.g. Tok_dp.dat = Tokimoto's potential for d5/2 wave) (e.g. refit_dm.dat = Refitted model for d3/2 wave)
+If file name starts with *WS*, it is for Racam5eps.out. Any questions regarding the names can be resolved by consulting the *Vc*, *Vso* values in the input file.
+
+## 5. Pending tasks and future extensions
 
 > Falta pdf de Griffiths
 
@@ -120,6 +134,6 @@ Coherencia Boscos.f and Racam5.f
 
 > Exfor no estaba los datos de Sfactor para el paper de Burzynski, solo angular differential cross section.
 
-> Optimización de gradinet descend en caso de utilizarse
+> Optimización de gradinet descent en caso de utilizarse
 
 > Podria elegirse en mejor learning rate, pero entras en compromiso de menos steps pero menos estabilidad.
