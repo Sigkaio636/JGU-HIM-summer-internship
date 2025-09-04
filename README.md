@@ -11,6 +11,7 @@ Contains the collected papers on experiments involving empirical measurements of
 Also, contains the papers of ANC and Phase-shift used data. 
 
 > Cross section data extracted from https://www-nds.iaea.org/exfor can be found in [Racam_sca Jupyter notebook](Sfactor/Racam_sca.ipynb) in **Manual S factor extraction** section.
+> Phaseshift data extracted from [Ivanovich]( can be found in [Racam_sca Jupyter notebook](Sfactor/Racam_sca.ipynb) in **Manual S factor extraction** section.
 
 ### 📑 ./Support papers 📑
 It consists of papers related to the research topic that were found in the initial literature search. They were helpful in understanding the state of the issue at the beginning. (see [Pending tasks and future extensions](##-pending-tasks-and-future-extensions))
