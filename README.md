@@ -79,7 +79,7 @@ It contains the executables which perform the refit of central potential *Vc* an
 
 ## 4. Complete HPC directory
 ### 💻🗃️ ./gonzalee 💻🗃️
-This folder contains the content that was in my *kphth* user account. **It is especially interesting for the .dat input files 🔼**.
+This folder contains the content that was in my *kphth* user account. **It is especially interesting for the .dat input files**.
 #### ▶ ./gonzalee/manual
 The scripts and input files from the Boscos.f and Racam5.f manual examples. Used initially to familiarize oneself with the Fortran codes.
 #### ▶ ./gonzalee/BindE
